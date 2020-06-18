@@ -4,31 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Box Model</title>
+    <title>Flex</title>
     <style>
-        body,html{
-            padding: 0;
-            margin: 0;
-            background-color: green;
+        html,body{
             height: 100%;
         }
-        .box {
-            background-color: greenyellow;
-            width: 50%;
-            height: 50%;
-            margin: 20px 10px 5px 2px;
+        .father{
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            height: 100%;
+            flex-direction: column;
         }
-        .inside-box{
-            background-color: skyblue;
-            width: 50%;
-            height: 50%;
-            border: 5px dashed red;
+        .box{
+            background-color: red;
+            width: 200px;
+            height: 200px;
         }
     </style>
 </head>
 <body>
-    <div class="box">
-        <div class="inside-box"></div>
+    <div class="father">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
     </div>
 </body>
 </html>
