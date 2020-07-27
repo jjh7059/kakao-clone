@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transitions</title>
+    <style>
+      .box{
+        background-color: green;
+        color: white;
+        /* hover하면 배경색이 0.5초 텀을 두고 ease-in-out 효과로 반응
+        transition: background-color 0.5s ease-in-out; */
+        /* 1개 이상(배경색, 글자색)의 설정값을 바꾸고 싶으면 all 사용 */
+        transition: all 0.5s ease-in-out;
+      }
+      /* state: hover, active, focus, visited */
+      .box:active{
+        background-color: red;
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <span class="box">
+      Text
+    </span>
+  </body>
+</html>
