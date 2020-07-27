@@ -6,28 +6,37 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Flex</title>
     <style>
-        html,body{
-            height: 100%;
-        }
-        .father{
-            display: flex;
-            justify-content: center;
-            align-items: flex-end;
-            height: 100%;
-            flex-direction: column;
-        }
-        .box{
-            background-color: red;
-            width: 200px;
-            height: 200px;
-        }
+      body,html {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      body{
+        height: 400%;
+        background-color: red;
+      }
+      #boxOne{
+        height: 300px;
+        width: 300px;
+        background-color: yellow;
+        position: static;
+      }
+      #boxTwo{
+        height: 300px;
+        width: 300px;
+        background-color: green;
+        position: absolute;
+        bottom: 10px;
+        right: 0px;
+      }
     </style>
 </head>
 <body>
-    <div class="father">
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-    </div>
+  <div id="boxOne">
+    <div class="box-child"></div>
+  </div>
+  <div id="boxTwo">
+    <div class="box-child"></div>
+  </div>
 </body>
 </html>
